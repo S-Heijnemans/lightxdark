@@ -41,7 +41,7 @@ _data = {
 &"move_horizontal": SubResource("Animation_6d6hm")
 }
 
-[node name="MovingPlatform" type="Node2D"]
+[node name="MovingPlatformHorizontal" type="Node2D"]
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
 
