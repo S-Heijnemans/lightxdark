@@ -1,7 +1,12 @@
-[gd_scene format=3 uid="uid://u7u7o4vtdj7e"]
+[gd_scene load_steps=2 format=3 uid="uid://u7u7o4vtdj7e"]
+
+[ext_resource type="PackedScene" uid="uid://ceoyvypdgc3qy" path="res://objects/moving_platform.tscn" id="1_0yygo"]
 
 [node name="Test_Map_Main" type="Node2D"]
 
 [node name="Test_Map_Main_Tileset" type="Node2D" parent="."]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="Test_Map_Main_Tileset"]
+
+[node name="MovingPlatform" parent="." instance=ExtResource("1_0yygo")]
+position = Vector2(490, 361)
