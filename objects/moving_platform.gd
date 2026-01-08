@@ -1,6 +1,7 @@
 extends Path2D
 
-@export var loop = true
+## If the path is a closed loop
+@export var loop = false
 @export var speed = 2.0
 @export var speed_scale = 1.0
 

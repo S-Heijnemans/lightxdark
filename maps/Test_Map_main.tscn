@@ -1,24 +1,29 @@
 [gd_scene load_steps=4 format=3 uid="uid://u7u7o4vtdj7e"]
 
-[ext_resource type="PackedScene" uid="uid://ceoyvypdgc3qy" path="res://objects/moving_platform.tscn" id="1_0yygo"]
-[ext_resource type="PackedScene" uid="uid://bqaa37vdsy0gp" path="res://objects/moving_platform_vertical.tscn" id="2_2r7ek"]
+[ext_resource type="PackedScene" uid="uid://bqaa37vdsy0gp" path="res://objects/moving_platform.tscn" id="1_0yygo"]
+
+[sub_resource type="Curve2D" id="Curve2D_0yygo"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, -81)
+}
+point_count = 2
 
 [sub_resource type="Curve2D" id="Curve2D_2r7ek"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, -2, -160, 0, 0, 0, 0, 0, 2)
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 160, 0)
 }
 point_count = 2
 
 [node name="Test_Map_Main" type="Node2D"]
 
-[node name="MovingPlatformHorizontal" parent="." instance=ExtResource("1_0yygo")]
-position = Vector2(431, 459)
-
 [node name="Test_Map_Main_Tileset" type="Node2D" parent="."]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="Test_Map_Main_Tileset"]
 
-[node name="MovingPlatformVertical" parent="." instance=ExtResource("2_2r7ek")]
-position = Vector2(800, 397)
+[node name="MovingPlatform" parent="." instance=ExtResource("1_0yygo")]
+position = Vector2(373, 378)
+curve = SubResource("Curve2D_0yygo")
+
+[node name="MovingPlatform2" parent="." instance=ExtResource("1_0yygo")]
+position = Vector2(702, 454)
 curve = SubResource("Curve2D_2r7ek")
-loop = false
