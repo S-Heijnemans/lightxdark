@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1j3isensm7k6"]
+
+[sub_resource type="FontVariation" id="FontVariation_lplbd"]
+
+[node name="Level_Select_screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1157.0
+offset_bottom = 658.0
+color = Color(0.19607843, 0.19607843, 0.19607843, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 354.0
+offset_top = 24.0
+offset_right = 712.0
+offset_bottom = 116.0
+theme_override_colors/font_color = Color(0.9372549, 0.7490196, 0.015686275, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 6
+theme_override_fonts/font = SubResource("FontVariation_lplbd")
+theme_override_font_sizes/font_size = 67
+text = "LightXDark"

@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfbp3qeo5h72o"]
+
+[ext_resource type="Script" uid="uid://capam6su3xv8e" path="res://maps/screens/Title_Screen.gd" id="1_tcbe5"]
+
+[sub_resource type="FontVariation" id="FontVariation_xr5f6"]
+
+[node name="MenuTitle" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tcbe5")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1159.0
+offset_bottom = 655.0
+color = Color(0.19793725, 0.19793722, 0.19793722, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 89.0
+offset_top = 85.0
+offset_right = 447.0
+offset_bottom = 183.0
+theme_override_colors/font_color = Color(0.9372549, 0.7490196, 0.015686275, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 6
+theme_override_fonts/font = SubResource("FontVariation_xr5f6")
+theme_override_font_sizes/font_size = 67
+text = "LightXDark"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 258.0
+offset_right = 332.0
+offset_bottom = 317.0
+theme_override_colors/font_color = Color(0.9372549, 0.7490196, 0.015686275, 1)
+theme_override_colors/font_pressed_color = Color(0.3876424, 0.30361542, 0.0017456542, 1)
+theme_override_colors/font_hover_color = Color(0.61191195, 0.48527515, 0.0040770597, 1)
+theme_override_colors/icon_normal_color = Color(0.23392546, 0.23392546, 0.23392543, 1)
+theme_override_colors/icon_pressed_color = Color(0.14406255, 0.14406255, 0.14406255, 1)
+theme_override_font_sizes/font_size = 26
+text = "PLAY"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
