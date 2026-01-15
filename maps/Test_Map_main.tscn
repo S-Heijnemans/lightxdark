@@ -1,18 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://u7u7o4vtdj7e"]
-
-[ext_resource type="PackedScene" uid="uid://bqaa37vdsy0gp" path="res://objects/moving_platform.tscn" id="1_0yygo"]
-
-[sub_resource type="Curve2D" id="Curve2D_0yygo"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, -81)
-}
-point_count = 2
-
-[sub_resource type="Curve2D" id="Curve2D_2r7ek"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 160, 0)
-}
-point_count = 2
+[gd_scene format=3 uid="uid://u7u7o4vtdj7e"]
 
 [node name="Test_Map_Main" type="Node2D"]
 
