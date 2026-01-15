@@ -74,3 +74,5 @@ Duck_Dark={
 2d_render/layer_3="Player_Dark"
 2d_render/layer_4="Trap"
 2d_render/layer_5="Collectable"
+2d_physics/layer_1="ground"
+2d_physics/layer_2="background"
