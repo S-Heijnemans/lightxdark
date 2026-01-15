@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://c3t2b5jflc80q"]
+
+[ext_resource type="Texture2D" uid="uid://bb1wsbybaevsf" path="res://assets/images/tileset/Dungeon Tile Set.png" id="1_akfat"]
+[ext_resource type="Script" uid="uid://baoyl0scbbx2f" path="res://objects/spike_trap.gd" id="1_mu043"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_akfat"]
+size = Vector2(32, 10)
+
+[node name="SpikeTrap" type="Area2D"]
+script = ExtResource("1_mu043")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_akfat")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_akfat")
+region_enabled = true
+region_rect = Rect2(15, 230, 32.5, 10)
