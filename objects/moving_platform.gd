@@ -16,8 +16,6 @@ func _ready() -> void:
 		animation.play("move_vertical")
 		animation.speed_scale = speed_scale
 		set_process(false)
-	pass
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
