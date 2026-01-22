@@ -50,7 +50,8 @@
 [ext_resource type="Texture2D" uid="uid://q28vcde1by8b" path="res://assets/images/player/jump_start/0_Dark_Oracle_Jump Start_004.png" id="36_ca6ik"]
 [ext_resource type="Texture2D" uid="uid://d3rjaw04c7rt4" path="res://assets/images/player/jump_start/0_Dark_Oracle_Jump Start_005.png" id="37_cq7pn"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_u4amc"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_neoyj"]
+size = Vector2(157, 201)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_a0bsf"]
 animations = [{
@@ -228,9 +229,14 @@ animations = [{
 script = ExtResource("1_bvbjk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_u4amc")
+position = Vector2(300.5, 295.5)
+shape = SubResource("RectangleShape2D_neoyj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(305, 291)
+scale = Vector2(0.35444444, 0.35444444)
 sprite_frames = SubResource("SpriteFrames_a0bsf")
-animation = &"Jump_loop"
-frame_progress = 0.023193855
+animation = &"Jump_start"
+autoplay = "Idle"
+frame = 2
+frame_progress = 0.7160141
