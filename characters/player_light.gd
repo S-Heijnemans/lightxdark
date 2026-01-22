@@ -27,7 +27,6 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 	if not is_on_floor() and velocity.y > 0:
-		animated_sprite_2d.play("Jump_start")
 		animated_sprite_2d.play("Falling_down")
 	elif not is_on_floor():
 		animated_sprite_2d.play("Jump_loop")
