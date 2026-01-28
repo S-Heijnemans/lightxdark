@@ -27,10 +27,10 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 	if not is_on_floor() and velocity.y > 0:
-		animated_sprite_2d.play("Falling_down")
+		animated_sprite_2d.play("Falling_down_light")
 	elif not is_on_floor():
-		animated_sprite_2d.play("Jump_loop")
+		animated_sprite_2d.play("Jump_loop_light")
 	elif direction:
-		animated_sprite_2d.play("Running")
+		animated_sprite_2d.play("Running_light")
 	else:
-		animated_sprite_2d.play("Idle")
+		animated_sprite_2d.play("Idle_light")
