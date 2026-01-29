@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://3wr6vh8rsc6e"]
+
+[ext_resource type="PackedScene" uid="uid://ch466wtiecgaf" path="res://characters/player_light.tscn" id="1_g5srm"]
+[ext_resource type="PackedScene" uid="uid://bvwrkxntuym8x" path="res://characters/player_dark.tscn" id="2_evvtq"]
+[ext_resource type="PackedScene" uid="uid://c3t2b5jflc80q" path="res://objects/spike_trap.tscn" id="3_evvtq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_812a5"]
+size = Vector2(540, 329)
+
+[node name="player_movement_map" type="Node2D"]
+
+[node name="PlayerLight" parent="." instance=ExtResource("1_g5srm")]
+
+[node name="Player_Dark" parent="." instance=ExtResource("2_evvtq")]
+position = Vector2(175, 0)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(355, 572)
+shape = SubResource("RectangleShape2D_812a5")
+
+[node name="SpikeTrap" parent="." instance=ExtResource("3_evvtq")]
+position = Vector2(170, 394)
