@@ -1,11 +1,212 @@
-[gd_scene load_steps=3 format=3 uid="uid://bvwrkxntuym8x"]
+[gd_scene load_steps=46 format=3 uid="uid://bvwrkxntuym8x"]
 
 [ext_resource type="Script" uid="uid://cuqwrdoy8s716" path="res://characters/player_dark.gd" id="1_0i6xw"]
+[ext_resource type="Texture2D" uid="uid://j8vafovjydw4" path="res://assets/images/player_dark/idle/0_Dark_Oracle_Idle_000.png" id="2_7xe6t"]
+[ext_resource type="Texture2D" uid="uid://cvl3iigy0ihpl" path="res://assets/images/player_dark/idle/0_Dark_Oracle_Idle_001.png" id="3_qyygk"]
+[ext_resource type="Texture2D" uid="uid://cexo5tfxhrkyw" path="res://assets/images/player_dark/idle/0_Dark_Oracle_Idle_002.png" id="4_qn8n0"]
+[ext_resource type="Texture2D" uid="uid://bjk11pt06mg88" path="res://assets/images/player_dark/idle/0_Dark_Oracle_Idle_003.png" id="5_j3ssl"]
+[ext_resource type="Texture2D" uid="uid://urq6b2neuidx" path="res://assets/images/player_dark/idle/0_Dark_Oracle_Idle_004.png" id="6_xtdgv"]
+[ext_resource type="Texture2D" uid="uid://dsk5wivoclcot" path="res://assets/images/player_dark/idle/0_Dark_Oracle_Idle_005.png" id="7_dkydv"]
+[ext_resource type="Texture2D" uid="uid://bo7lckeraowdf" path="res://assets/images/player_dark/idle/0_Dark_Oracle_Idle_006.png" id="8_kys43"]
+[ext_resource type="Texture2D" uid="uid://bqwxbl4ei4fmi" path="res://assets/images/player_dark/idle/0_Dark_Oracle_Idle_007.png" id="9_bcgj3"]
+[ext_resource type="Texture2D" uid="uid://brln03qvgkkrb" path="res://assets/images/player_dark/idle/0_Dark_Oracle_Idle_008.png" id="10_elh8p"]
+[ext_resource type="Texture2D" uid="uid://by1u6dehwclv0" path="res://assets/images/player_dark/idle/0_Dark_Oracle_Idle_009.png" id="11_dx1ud"]
+[ext_resource type="Texture2D" uid="uid://btynm8l2kgbrg" path="res://assets/images/player_dark/idle/0_Dark_Oracle_Idle_010.png" id="12_ct3i0"]
+[ext_resource type="Texture2D" uid="uid://b48euuns5bku5" path="res://assets/images/player_dark/idle/0_Dark_Oracle_Idle_011.png" id="13_dium3"]
+[ext_resource type="Texture2D" uid="uid://cruwy51sbvta8" path="res://assets/images/player_dark/idle/0_Dark_Oracle_Idle_012.png" id="14_j6j71"]
+[ext_resource type="Texture2D" uid="uid://b7tjor37fm02v" path="res://assets/images/player_dark/idle/0_Dark_Oracle_Idle_013.png" id="15_pl6h3"]
+[ext_resource type="Texture2D" uid="uid://cpx2lcdujvwvr" path="res://assets/images/player_dark/idle/0_Dark_Oracle_Idle_014.png" id="16_8hk46"]
+[ext_resource type="Texture2D" uid="uid://1mjtulgptqhx" path="res://assets/images/player_dark/idle/0_Dark_Oracle_Idle_015.png" id="17_336cv"]
+[ext_resource type="Texture2D" uid="uid://ch4ib6o67rs1f" path="res://assets/images/player_dark/idle/0_Dark_Oracle_Idle_016.png" id="18_okk5h"]
+[ext_resource type="Texture2D" uid="uid://celbe14krw14x" path="res://assets/images/player_dark/idle/0_Dark_Oracle_Idle_017.png" id="19_wited"]
+[ext_resource type="Texture2D" uid="uid://ccm55cqdne3bq" path="res://assets/images/player_dark/falling_down/0_Dark_Oracle_Falling Down_000.png" id="20_btbwl"]
+[ext_resource type="Texture2D" uid="uid://bov8bc10k84ca" path="res://assets/images/player_dark/jump_loop/0_Dark_Oracle_Jump Loop_000.png" id="20_kys43"]
+[ext_resource type="Texture2D" uid="uid://dqs7lc4wtmbjm" path="res://assets/images/player_dark/jump_loop/0_Dark_Oracle_Jump Loop_001.png" id="21_bcgj3"]
+[ext_resource type="Texture2D" uid="uid://inf1jdkp0v3c" path="res://assets/images/player_dark/falling_down/0_Dark_Oracle_Falling Down_001.png" id="21_pdefr"]
+[ext_resource type="Texture2D" uid="uid://dciw2p6lsw3g3" path="res://assets/images/player_dark/jump_loop/0_Dark_Oracle_Jump Loop_002.png" id="22_elh8p"]
+[ext_resource type="Texture2D" uid="uid://c3q8kr0tgf4yx" path="res://assets/images/player_dark/falling_down/0_Dark_Oracle_Falling Down_002.png" id="22_xbttx"]
+[ext_resource type="Texture2D" uid="uid://d0k72faly5h08" path="res://assets/images/player_dark/falling_down/0_Dark_Oracle_Falling Down_003.png" id="23_5807u"]
+[ext_resource type="Texture2D" uid="uid://6j2oj0bhp5tu" path="res://assets/images/player_dark/jump_loop/0_Dark_Oracle_Jump Loop_003.png" id="23_dx1ud"]
+[ext_resource type="Texture2D" uid="uid://cn6dq1tewamvy" path="res://assets/images/player_dark/jump_loop/0_Dark_Oracle_Jump Loop_004.png" id="24_ct3i0"]
+[ext_resource type="Texture2D" uid="uid://dsl3or1cdyuhd" path="res://assets/images/player_dark/falling_down/0_Dark_Oracle_Falling Down_004.png" id="24_ltoff"]
+[ext_resource type="Texture2D" uid="uid://corppc6tk48et" path="res://assets/images/player_dark/falling_down/0_Dark_Oracle_Falling Down_005.png" id="25_7fvxj"]
+[ext_resource type="Texture2D" uid="uid://b8rwat5m2l07" path="res://assets/images/player_dark/jump_loop/0_Dark_Oracle_Jump Loop_005.png" id="25_dium3"]
+[ext_resource type="Texture2D" uid="uid://drw0xqraluq1" path="res://assets/images/player_dark/running/0_Dark_Oracle_Running_000.png" id="26_btxpx"]
+[ext_resource type="Texture2D" uid="uid://1eesaprat2vb" path="res://assets/images/player_dark/running/0_Dark_Oracle_Running_001.png" id="27_7ehiu"]
+[ext_resource type="Texture2D" uid="uid://c4emmw75ktbhr" path="res://assets/images/player_dark/running/0_Dark_Oracle_Running_002.png" id="28_4lie6"]
+[ext_resource type="Texture2D" uid="uid://tcdcr5r6gvrj" path="res://assets/images/player_dark/running/0_Dark_Oracle_Running_003.png" id="29_ph8s4"]
+[ext_resource type="Texture2D" uid="uid://byvy54kty3o2" path="res://assets/images/player_dark/running/0_Dark_Oracle_Running_004.png" id="30_6yk22"]
+[ext_resource type="Texture2D" uid="uid://liytq1ah4nmc" path="res://assets/images/player_dark/running/0_Dark_Oracle_Running_005.png" id="31_y3umd"]
+[ext_resource type="Texture2D" uid="uid://c7uexpi0desw3" path="res://assets/images/player_dark/running/0_Dark_Oracle_Running_006.png" id="32_btbwl"]
+[ext_resource type="Texture2D" uid="uid://bge5ktvht54pf" path="res://assets/images/player_dark/running/0_Dark_Oracle_Running_007.png" id="33_pdefr"]
+[ext_resource type="Texture2D" uid="uid://3vew4p38n5yf" path="res://assets/images/player_dark/running/0_Dark_Oracle_Running_008.png" id="34_xbttx"]
+[ext_resource type="Texture2D" uid="uid://bmfake2hnkbx" path="res://assets/images/player_dark/running/0_Dark_Oracle_Running_009.png" id="35_5807u"]
+[ext_resource type="Texture2D" uid="uid://2cr060bkt5ke" path="res://assets/images/player_dark/running/0_Dark_Oracle_Running_010.png" id="36_ltoff"]
+[ext_resource type="Texture2D" uid="uid://dg0bwum0qjf60" path="res://assets/images/player_dark/running/0_Dark_Oracle_Running_011.png" id="37_7fvxj"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_wh3oi"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sdjqj"]
+size = Vector2(157, 201)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_btxpx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_7xe6t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qyygk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_qn8n0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_j3ssl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_xtdgv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dkydv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_kys43")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_bcgj3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_elh8p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_dx1ud")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ct3i0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_dium3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_j6j71")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_pl6h3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_8hk46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_336cv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_okk5h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_wited")
+}],
+"loop": true,
+"name": &"Idle_dark",
+"speed": 18.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_btbwl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_pdefr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_xbttx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_5807u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ltoff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_7fvxj")
+}],
+"loop": true,
+"name": &"falling_down_dark",
+"speed": 18.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_kys43")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_bcgj3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_elh8p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_dx1ud")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ct3i0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_dium3")
+}],
+"loop": true,
+"name": &"jump_loop_dark",
+"speed": 18.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_btxpx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_7ehiu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_4lie6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ph8s4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_6yk22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_y3umd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_btbwl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_pdefr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_xbttx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_5807u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_ltoff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_7fvxj")
+}],
+"loop": true,
+"name": &"running_dark",
+"speed": 18.0
+}]
 
 [node name="Player_Dark" type="CharacterBody2D"]
+collision_layer = 8
 script = ExtResource("1_0i6xw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_wh3oi")
+position = Vector2(300.5, 295.5)
+shape = SubResource("RectangleShape2D_sdjqj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(308.5, 286.50003)
+scale = Vector2(0.36333334, 0.36333334)
+sprite_frames = SubResource("SpriteFrames_btxpx")
+animation = &"falling_down_dark"
+autoplay = "Idle_dark"
