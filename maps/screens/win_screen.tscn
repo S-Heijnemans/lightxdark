@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdr4fkrib32w2"]
+
+[ext_resource type="Script" uid="uid://cos1d068hieub" path="res://win_screen.gd" id="1_b7hgi"]
+
+[sub_resource type="FontVariation" id="FontVariation_i628i"]
+
+[node name="Win_screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b7hgi")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1159.0
+offset_bottom = 655.0
+color = Color(0.19793725, 0.19793722, 0.19793722, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 264.0
+offset_top = 81.0
+offset_right = 862.0
+offset_bottom = 179.0
+theme_override_colors/font_color = Color(0.9372549, 0.7490196, 0.015686275, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 6
+theme_override_fonts/font = SubResource("FontVariation_i628i")
+theme_override_font_sizes/font_size = 67
+text = "LEVEL COMPLEATE"
+
+[node name="Level_select" type="Button" parent="."]
+layout_mode = 0
+offset_left = 469.0
+offset_top = 272.0
+offset_right = 628.0
+offset_bottom = 324.0
+theme_override_font_sizes/font_size = 21
+text = "Level Select
+"
+
+[node name="Home" type="Button" parent="."]
+layout_mode = 0
+offset_left = 470.0
+offset_top = 346.0
+offset_right = 629.0
+offset_bottom = 398.0
+theme_override_font_sizes/font_size = 21
+text = "HOME
+"
+
+[connection signal="pressed" from="Level_select" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Home" to="." method="_on_home_pressed"]
