@@ -6,7 +6,7 @@ func _on_body_entered(body):
 	GlobalNode.door_dark = true
 	if GlobalNode.door_light && GlobalNode.door_dark:
 		print("you win")
-		get_tree().change_scene_to_file("res://maps/Test_Map_main.tscn")
+		get_tree().change_scene_to_file("res://maps/screens/win_screen.tscn")
 		GlobalNode.door_dark = false
 		GlobalNode.door_light = false
 

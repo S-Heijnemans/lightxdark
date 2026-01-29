@@ -197,6 +197,7 @@ animations = [{
 }]
 
 [node name="Player_Dark" type="CharacterBody2D"]
+scale = Vector2(0.435, 0.435)
 collision_layer = 8
 collision_mask = 33
 script = ExtResource("1_0i6xw")
