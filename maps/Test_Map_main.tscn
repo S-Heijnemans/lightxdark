@@ -1,10 +1,12 @@
-[gd_scene load_steps=23 format=4 uid="uid://u7u7o4vtdj7e"]
+[gd_scene load_steps=27 format=4 uid="uid://u7u7o4vtdj7e"]
 
 [ext_resource type="Texture2D" uid="uid://bb1wsbybaevsf" path="res://assets/images/tileset/Dungeon Tile Set.png" id="1_0yygo"]
 [ext_resource type="PackedScene" uid="uid://c72ppixwbj8d7" path="res://objects/doors/door_light.tscn" id="2_k50ye"]
 [ext_resource type="PackedScene" uid="uid://br5bmy7jafftu" path="res://objects/doors/door_dark.tscn" id="3_mhbpo"]
 [ext_resource type="PackedScene" uid="uid://bvwrkxntuym8x" path="res://characters/player_dark.tscn" id="4_8xhvi"]
 [ext_resource type="PackedScene" uid="uid://ch466wtiecgaf" path="res://characters/player_light.tscn" id="5_mhbpo"]
+[ext_resource type="PackedScene" path="res://objects/spike_trap.tscn" id="6_bhsdr"]
+[ext_resource type="PackedScene" uid="uid://bqaa37vdsy0gp" path="res://objects/moving_platform.tscn" id="7_mnb5n"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_0yygo"]
 vertices = PackedVector2Array(16, 16, -16, 16, -16, -16, 16, -16)
@@ -248,6 +250,18 @@ tile_size = Vector2i(12, 12)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_rkel8")
 
+[sub_resource type="Curve2D" id="Curve2D_bhsdr"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 9, 6, 0, 0, 0, 0, 204, -126)
+}
+point_count = 2
+
+[sub_resource type="Curve2D" id="Curve2D_mnb5n"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -1, -1, 0, 0, 0, 0, 220, -100, 0, 0, 0, 0, 387, -119)
+}
+point_count = 3
+
 [node name="Test_Map_Main" type="Node2D"]
 
 [node name="Test_Map_Main_Tileset" type="Node2D" parent="."]
@@ -261,13 +275,39 @@ tile_map_data = PackedByteArray("AABeAC4AAAAAAAMAAABeAC8AAAAAAAEAAABeADAAAAAAAAM
 tile_set = SubResource("TileSet_axcc3")
 
 [node name="light_door" parent="." instance=ExtResource("2_k50ye")]
-position = Vector2(26, 430)
+position = Vector2(100.99999, 127.00003)
 
 [node name="dark_door" parent="." instance=ExtResource("3_mhbpo")]
-position = Vector2(977, 435)
+position = Vector2(984.00006, 114.00003)
 
 [node name="Player_Dark" parent="." instance=ExtResource("4_8xhvi")]
-position = Vector2(808, 452)
+position = Vector2(590, 601)
 
 [node name="PlayerLight" parent="." instance=ExtResource("5_mhbpo")]
-position = Vector2(338, 140)
+position = Vector2(269, 589)
+
+[node name="SpikeTrap" parent="." instance=ExtResource("6_bhsdr")]
+position = Vector2(359, 634)
+
+[node name="MovingPlatform" parent="." instance=ExtResource("7_mnb5n")]
+position = Vector2(807, 530)
+curve = SubResource("Curve2D_bhsdr")
+
+[node name="MovingPlatform2" parent="." instance=ExtResource("7_mnb5n")]
+position = Vector2(722, 366)
+
+[node name="MovingPlatform3" parent="." instance=ExtResource("7_mnb5n")]
+position = Vector2(921, 228)
+
+[node name="SpikeTrap2" parent="." instance=ExtResource("6_bhsdr")]
+position = Vector2(739, 360)
+
+[node name="MovingPlatform4" parent="." instance=ExtResource("7_mnb5n")]
+position = Vector2(274, 493)
+
+[node name="MovingPlatform5" parent="." instance=ExtResource("7_mnb5n")]
+position = Vector2(56, 408)
+curve = SubResource("Curve2D_mnb5n")
+
+[node name="MovingPlatform6" parent="." instance=ExtResource("7_mnb5n")]
+position = Vector2(71, 224)
