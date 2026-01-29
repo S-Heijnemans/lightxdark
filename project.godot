@@ -81,3 +81,5 @@ Duck_Dark={
 2d_render/layer_5="Collectable"
 2d_physics/layer_1="ground"
 2d_physics/layer_2="background"
+2d_physics/layer_3="player_light"
+2d_physics/layer_4="player_dark"
