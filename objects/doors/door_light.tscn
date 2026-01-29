@@ -3,9 +3,16 @@
 [ext_resource type="Script" uid="uid://blbadsw1kc64b" path="res://objects/doors/light_door.gd" id="1_c70hk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xwd2u"]
+size = Vector2(140, 227)
 
 [node name="Area2D" type="Area2D"]
+collision_layer = 16
+collision_mask = 4
 script = ExtResource("1_c70hk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(60, 103.5)
 shape = SubResource("RectangleShape2D_xwd2u")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

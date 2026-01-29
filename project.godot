@@ -15,6 +15,10 @@ run/main_scene="uid://u7u7o4vtdj7e"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GlobalNode="*res://node.tscn"
+
 [dotnet]
 
 project/assembly_name="LichtXDarkpre"
@@ -83,3 +87,5 @@ Duck_Dark={
 2d_physics/layer_2="background"
 2d_physics/layer_3="player_light"
 2d_physics/layer_4="player_dark"
+2d_physics/layer_5="door_light"
+2d_physics/layer_6="door_dark"

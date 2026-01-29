@@ -198,14 +198,15 @@ animations = [{
 
 [node name="Player_Dark" type="CharacterBody2D"]
 collision_layer = 8
+collision_mask = 33
 script = ExtResource("1_0i6xw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(300.5, 295.5)
+position = Vector2(-2.5, 2.4999695)
 shape = SubResource("RectangleShape2D_sdjqj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(308.5, 286.50003)
+position = Vector2(5.5, -6.5)
 scale = Vector2(0.36333334, 0.36333334)
 sprite_frames = SubResource("SpriteFrames_btxpx")
 animation = &"falling_down_dark"
