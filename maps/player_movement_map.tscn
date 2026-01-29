@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://yo3arl147xqr"]
+
+[ext_resource type="PackedScene" uid="uid://ch466wtiecgaf" path="res://characters/player_light.tscn" id="1_812a5"]
+[ext_resource type="PackedScene" uid="uid://bvwrkxntuym8x" path="res://characters/player_dark.tscn" id="2_ax238"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_812a5"]
+size = Vector2(540, 329)
+
+[node name="player_movement_map" type="Node2D"]
+
+[node name="PlayerLight" parent="." instance=ExtResource("1_812a5")]
+
+[node name="Player_Dark" parent="." instance=ExtResource("2_ax238")]
+position = Vector2(175, 0)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(355, 572)
+shape = SubResource("RectangleShape2D_812a5")
